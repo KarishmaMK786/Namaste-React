@@ -1,35 +1,48 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-{/* <div id="parent">
-    <div id="child1">
-        <h1>I'm an h1 tag</h1>
-        <h2>I'm an h2 tag</h2>
+
+// React Element
+
+// const heading = React.createElement("h1", {id:"heading"}, "Namaste React");
+// console.log(heading);
+
+
+const element = <span>React Element</span>;
+const Title =  (
+   <div>
+
+     {element} 
+     <h1>Namaste React</h1>
+    
+   </div>
+);
+const Title1 = () => (
+    <div>
+      
+      <p>This course is all about react from basic to advance
+         so Master in he course
+      </p>
     </div>
-    <div id="child2">
-        <h1>I'm an h1 tag</h1>
-        <h2>I'm an h2 tag</h2>
+ );
+ 
+const number  = 1000 + 200;
+
+const HeadingComponent = () => (
+    
+    <div id="container">
+         
+          {Title}
+          <Title1 />
+          <Title1></Title1>
+          {Title1 ()}
+          <h2>{console.log("Hii kempi, How you doing")}</h2>
+          <h1 className = "heading">Namaste React Fnctional Component</h1>
     </div>
-</div> */}
+    
 
+);
 
-const parent = React.createElement("div", {id: "parent"}, 
-               [
-                    React.createElement("div", {id: "child1"},
-                    [React.createElement("h1", {}, "This is Namaste react"),
-                    React.createElement("h2", {}, "I'm an h1 tag")
-                    ]),
-                    
-                    React.createElement("div", {id: "child2"},
-                    [React.createElement("h1", {}, "I'm an h1 tag"),
-                    React.createElement("h2", {}, "I'm an h1 tag")
-                    ]) 
-             
-               ])
-
-
-const heading = React.createElement("h1", {id: "heading", xyz:"abc"},"Hello world from React!");
-                            // from first C link
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-
-root.render(parent);
+// root.render(jsxHeading);   for react element
+root.render(<HeadingComponent />);
