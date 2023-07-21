@@ -12,6 +12,7 @@
    justify-content: space-between;
    align-items: center;
    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+   width: 100%;
 }
 .logo {
    width: 140px;
@@ -20,16 +21,19 @@
 .nav-items > ul {
    display:flex;
    justify-content:end;
+   width: 100%;
 
    
 }
 .nav-items > ul > li {
-   padding: 10px;
-   margin: 10px;
+   padding: 0 20px;
+   margin: 15px;
    list-style-type: none;
    font-size: medium;
    color:  #964346;
    font-weight:500;
+   
+
   
 }
 .res-container {
@@ -69,6 +73,9 @@
    width: 100%;
    height: 150px;
 }
+.filter {
+   display: flex;
+}
 .filter-btn {
    padding: 5px;
    border-radius: 5px;
@@ -79,4 +86,39 @@
 }
 .filter-btn:hover {
    border: 1px solid rgb(141, 66, 66);
+}
+.shimmer-container{
+   display: flex;
+}
+.shimmer-card {
+   width: 200px;
+   height: 400px;
+}
+.login {
+   width: 30%;
+   padding: 0px 20px;
+   border: none;
+   background-color: none;
+   cursor: pointer;
+
+}
+.search {
+   padding: 5px;
+   border-radius: 5px;
+   margin: 10px;
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+   border: none;
+   width: 25%;
+ 
+}
+.search input {
+   border: none;
+   
+}
+.search  button {
+   border: none;
+   margin-left: 110px;
+}
+.search input:focus {
+   outline: none;
 }
