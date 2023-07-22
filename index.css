@@ -32,9 +32,9 @@
    font-size: medium;
    color:  #964346;
    font-weight:500;
-   
+   cursor: pointer;
 
-  
+   
 }
 .res-container {
    display: flex;

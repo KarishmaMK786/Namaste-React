@@ -35,9 +35,8 @@ const Body = () => {
   //   return <Shimmer />
   //  }
 
-  return listData.length === 0 ? (
-    <Shimmer />
-  ) : (
+  return ( listData.length === 0 ?( <Shimmer />): 
+    (
     <div className="body">
       <div className="filter">
         <div className="search">
@@ -54,11 +53,11 @@ const Body = () => {
               // filter the restaurant cards and update the UI
               // search Text
               () => { 
-                const filteredResto = listData.filter( 
+                const filterResto = listData.filter( 
                   (res) => res.name.toLowerCase().includes(searchText.toLowerCase())
                 );
               
-                setFilteredResto(filteredResto) 
+                setFilteredResto(filterResto) 
               }
             }
           >
@@ -68,10 +67,10 @@ const Body = () => {
         <button
           className="filter-btn"
           onClick={() => {
-            const filteredData = listData.filter((ele) => {
+            const filterData = listData.filter((ele) => {
               return ele.rating > 4;
             });
-            setListData(filteredData);
+            setFilteredResto(filterData);
           }}
         >
           Top Rated Restaurants
@@ -83,7 +82,8 @@ const Body = () => {
         ))}
       </div>
     </div>
-  );
+  )
+  )
 };
 
 export default Body;
